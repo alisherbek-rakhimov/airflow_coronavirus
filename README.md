@@ -12,3 +12,14 @@
   to airflow
   instance
   memory for second task
+
+<hr>
+
+# DW credentials from docker-compose file:
+
+- POSTGRES_PASSWORD: postgres
+- POSTGRES_USER: postgres
+- POSTGRES_DB: postgres
+- PGPORT: 15432
+
+
