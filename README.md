@@ -23,7 +23,8 @@
 - PGPORT: 15432
 
 # Airflow credentiasl defaults to:
+
 - user: airflow
 - passowrd: airflow
 
-
+# please remove limit 10 from 2nd task to check, coz when its sorted from low to high, there is only 0 % recovered
