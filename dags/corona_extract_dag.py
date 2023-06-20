@@ -82,7 +82,8 @@ def transform_covid():
             create table transform_coronavirus1 as (select *, concat(round(precise_ratio, 2), ' %') as ratio_percent
                                             from (select *,
                                                          ("TotalRecovered" * 100) / ("TotalCases" * 1.0) as precise_ratio
-                                                  from coronavirus1) tmp
+                                                  from coronavirus1) tmp 
+                                                  order by precise_ratio desc 
                                             limit 10)
         """))
         conn.commit()
