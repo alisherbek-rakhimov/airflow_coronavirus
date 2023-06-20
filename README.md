@@ -22,4 +22,8 @@
 - POSTGRES_DB: postgres
 - PGPORT: 15432
 
+# Airflow credentiasl defaults to:
+- user: airflow
+- passowrd: airflow
+
 
